@@ -1,0 +1,165 @@
+@charset "UTF-8";
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    background-color: #000;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+}
+
+
+header{
+    background-color: #000;
+    border: 2px solid #14AEA8;
+    box-shadow: 0 0 15px #27f1eb;
+}
+#menu li:first-child{
+    display: none;
+}
+#menu li a{
+    border: 3px solid #14AEA8;
+    border-radius: 30px;
+}
+#menu li a:hover, #menu li a.active{
+    background-color: #14AEA8;
+    font-weight: bold;
+    box-shadow: 0 0 25px #14AEA8;
+}
+
+
+::-webkit-scrollbar{
+    width: 6px;
+}
+::-webkit-scrollbar-track{
+    background-color: #fbff00;
+    border-radius: 3px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #27f1eb;
+    border-radius: 3px;
+}
+
+/* Section coding */
+#v_layer{
+    height: 120vh;
+    opacity: 50%;
+    background-color: #000;
+}
+
+
+#download_btn{
+    border: 3px solid #14AEA8;
+    border-radius: 25px;
+}
+#download_btn:hover{
+    background-color: #14AEA8;
+    box-shadow: 0 0 20px #14AEA8;
+    font-weight: bold;
+}
+
+
+.text_color{
+    color: rgb(228, 226, 226);
+    text-align: justify;
+}
+
+#v_football,#v_basketball{
+    width: 100%;
+}
+
+
+#news_img img{
+    width: 43%;
+    margin: 3px;
+    position: relative;
+}
+#news_img img:hover{
+    width: 53%;
+}
+
+
+.card{
+    width: 18rem;
+    background-color: transparent;
+    border: 2px solid #14AEA8;
+    padding: 5px;
+    margin: 15px;
+}
+.card:hover{
+    width: 20rem;
+    box-shadow: 0 0 15px #14AEA8;
+}
+
+
+#community{
+    background-color: #e0ad05;
+}
+#community_btn{
+    background-color: #000;
+}
+#community_btn:hover{
+    box-shadow: 0 0 15px #fdc306;
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    #profile_icon{
+        display: none
+    }
+    .input-group{
+        width: fit-content !important;
+    }
+
+
+    #menu li:first-child{
+        display: block;
+    }
+
+
+    #v_layer{
+        height: 35vh;
+    }
+    #v_layer img{
+        width: 40%;
+    }
+    #v_layer h1{
+        font-size: 15px;
+    }
+    #v_layer button{
+        width: 20%;
+        font-size: 10px;
+    }
+
+
+    #media_contents{
+        flex-direction: column;
+    }
+
+
+    #news_img img{
+        width: 42%
+    }
+
+
+    .card{
+        width: 11rem;
+        margin: 2px;
+    }
+    .card:hover{
+        width: 12rem;
+    }
+
+
+    #community h1{
+        margin-left: 90px;
+    }
+    #community_btn{
+        width: 22%;
+        top: 60px;
+        left:230px;
+    }
+};

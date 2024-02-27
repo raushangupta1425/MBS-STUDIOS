@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outdoor Games</title>
+    <link rel="shortcut icon" href="Logo/logo.png" type="image/x-icon">
+    <!--fa fa-icon cdn linking-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--jQuery linking-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!--Animation linking-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!--Bootstrap cdn linking-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <!-- Wow scroll animation control linking -->
+    <script src="library/wow_animation_control/wow.min.js"></script>
+    <!--Google fonts linking-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+    <!--page css-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-offset="0">
+    <header class="container-fluid p-0 sticky-top">
+        <nav class="navbar navbar-expand-lg p-0 border-0 ">
+            <a class="brand ps-3" href="index.html"><img src="Logo/logo.png" alt="Logo" width="100px"></a>
+            <i class="fa fa-bars navbar-toggler fs-1 text-white" aria-hidden="true" data-bs-toggle="collapse" data-bs-target="#menu"></i>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav nav-tabs ms-auto m-0 border-0">
+                    <li class="nav-item"><a href="#" class="nav-link text-white ms-2 d-flex"><div class="rounded-circle" style="width: 40px; height:40px;"><i id="user_icon_2" class="fa fa-user-circle text-white fs-1" aria-hidden="true"></i></div><h4>Hello</h4></a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link text-white ms-2 active">About</a></li>
+                    <li class="nav-item"><a href="#media" class="nav-link text-white ms-2">Media</a></li>
+                    <li class="nav-item"><a href="#news" class="nav-link text-white ms-2">News</a></li>
+                    <li class="nav-item"><a href="#purchase" class="nav-link text-white ms-2">Purchase</a></li>
+                    <li class="nav-item"><a href="#community" class="nav-link text-white ms-2">Social Media</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link text-white ms-2">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <div class="input-group">
+                    <input id="search_area" type="search" placeholder="Search...." class="form-control bg-transparent text-white ms-3" style="border: none; display:none;">
+                    <i id="search_btn" class="fa fa-search text-white input-group-text bg-transparent" aria-hidden="true" style="border: none;"></i>
+                </div>
+            </div>
+            <div id="profile_icon">
+                <div class="rounded-circle m-3" style="width: 40px; height:40px;"><i id="user_icon" class="fa fa-user-circle text-white fs-1" aria-hidden="true"></i></div>
+            </div>
+        </nav>
+    </header>
+    <section class="container-fluid p-0 tab-content position-relative d-flex justify-content-center">
+        <Video autoplay width="100%" muted loop id="v_player">
+            <Source src="Files/Video.mp4" />
+        </Video>
+        <div id="v_layer" class="w-100 position-absolute top-0 d-flex flex-column justify-content-center align-items-center">
+            <img src="Logo/logo.png" alt="Logo">
+            <h1 class="text-white ps-3" style="border-left: 5px solid #fdc306;">WELCOME  TO GAME ZONE. <br> PLAY GAMES AND ENJOY YOUR FREE TIMES.</h1>
+            <button class="btn mt-3 text-white" id="download_btn">Download</button>
+        </div>
+    </section>
+    <section class="container-fluid tab-content text-white d-flex m-0" id="about" style="background-color: #000; color:#fff;">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 wow animate__animated animate__slideInLeft">
+                <img src="Files/Image/Skate.png" alt="Skate Image" width="100%" class="">
+            </div>
+            <div class="col-lg-6 col-md-12 p-4">
+                <h1 class="text-center" style="font-family:Verdana, Geneva, Tahoma, sans-serif">About</h1>
+                <p class="text_color wow animate__animated animate__zoomIn">Introducing Skater Republic, the thrilling upcoming arcade game
+                    that puts you right in the heart of a dynamic skateboarding adventure! Explore
+                    expansive skateparks, bustling cityscapes, and renowned real-life locations for an
+                    immersive experience like no other. Featuring intuitive controls, a sophisticated trick
+                    system, and a compelling progression framework, players will find themselves
+                    immersed in a world where every achievement feels truly gratifying. Keep an eye out
+                    as we work diligently to bring this extraordinary gaming experience to life.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid tab-content text-white mt-5" id="media" style="color:#fff;">
+        <div>
+            <h1 class="text-center">Media</h1>
+            <p class="text_color wow animate__animated animate__zoomIn">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo non, vero provident eius delectus illum eveniet dolor obcaecati consectetur officia iure, iusto excepturi tenetur laudantium quidem ex. Quis, quidem illum!</p>
+        </div>
+        <div class="row d-flex" id="media_contents">
+            <div class="col-lg-6 col-md-12 p-5" style="box-sizing: border-box;">
+                <Video autoplay muted loop id="v_football" class="position-relative" style="left:-700px">
+                    <Source src="Files/Football.mp4" />
+                </Video>
+                <h1 class="text-center" style="color: #14AEA8;">Football</h1>
+            </div>
+            <div class="col-lg-6 col-md-12 p-5">
+                <Video autoplay muted loop id="v_basketball" class="position-relative" style="right:-700px">
+                    <Source src="Files/Basketball.mp4" />
+                </Video>
+                <h1 class="text-center" style="color: #14AEA8;">Basketball</h1>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid tab-content text-white mt-5" id="news" style="color:#fff;">
+        <div class="row d-flex">
+            <div class="col-lg-6 col-md-12">
+                <h1 class="text-center">News</h1>
+                <p class="text_color wow animate__animated animate__zoomIn pe-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo non, vero provident eius delectus illum eveniet dolor obcaecati consectetur officia iure, iusto excepturi tenetur laudantium quidem ex. Quis, quidem illum!</p>
+            </div>
+            <div id="news_img" class="col-lg-6 col-md-12">
+                <img src="Files/Image/Pic 1.jpg" alt="Pic 1">
+                <img src="Files/Image/Pic 2.png" alt="Pic 2">
+                <img src="Files/Image/Skate.png" alt="Pic 5">
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid tab-content text-white mt-5" id="purchase" style="color:#fff;">
+        <div>
+            <h1 class="text-center">Purchase</h1>
+            <p class="text_color wow animate__animated animate__zoomIn">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo non, vero provident eius delectus illum eveniet dolor obcaecati consectetur officia iure, iusto excepturi tenetur laudantium quidem ex. Quis, quidem illum!</p>
+        </div>
+        <div class="d-flex justify-content-center">
+            <div class="row d-flex m-1">
+                <div class="card col-lg-6 col-md-12">
+                    <img src="Files/Image/hockey-stick.jpg" class="card-img-top" alt="Hockey Stick Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Hockey Stick</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+                <div class="card col-lg-6 col-md-12">
+                    <img src="Files/Image/Football_Img.jpg" class="card-img-top" alt="Football Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Football</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex m-1">
+                <div class="card col-lg-6 col-md-12">
+                    <img src="Files/Image/Racket.png" class="card-img-top" alt="Racket Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Racket</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+                <div class="card col-lg-6 col-md-12">
+                    <img src="Files/Image/Skate.png" class="card-img-top" alt="Skate Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Skate</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary text-center">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid tab-content text-white mt-5" id="community">
+        <div class="row d-flex p-md-5">
+            <div class="col-lg-6 col-md-12">
+                <div class="w-100 p-4">
+                    <h2 class="text-dark text-center">Join The Community</h2>
+                    <p class="fs-5" style="text-align: justify;">Join our community to be updated with new games and it's versions. And also to know weekly contest and tournaments updates and winners name too. Join the community to get all type of updates form our sides.</p>
+                </div>
+                <div id="carouselSlides" class="carousel slide w-75" data-bs-ride="carousel">
+                    <div class="carousel-inner d-flex justify-content-center">
+                        <div class="carousel-item active">
+                            <i class="fa fa-instagram d-block" style="font-size: 80px; color:#fd0644;" aria-hidden="true"></i>
+                            <p class="text-dark">Id: <a href="#">id_0000</a></p>
+                        </div>
+                        <div class="carousel-item">
+                            <i class="fa fa-facebook-official d-block" style="font-size: 80px; color:#0a60ff;" aria-hidden="true"></i>
+                            <p class="text-dark">Id: <a href="#">id_0000</a></p>
+                        </div>
+                        <div class="carousel-item">
+                            <i class="fa fa-twitter d-block" style="font-size: 80px; color:#0a60ff;" aria-hidden="true"></i>
+                            <p class="text-dark">Id: <a href="#">id_0000</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-end">
+                    <button id="community_btn" class="btn text-white fw-bold me-5">Join us</button>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 d-flex justify-content-center align-item-center p-3">
+                <img class="rounded-2" src="Files/Image/Community background.png" alt="Community background" width="100%">
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid tab-content text-white mt-5" id="contact" style="border:3px solid #14AEA8">
+        <div class="row d-flex">
+            <div class="col-lg-6 p-3">
+                <div class="row d-flex mb-5">
+                    <div class="col">
+                        <h1 class="text-center">Quick Links</h1>
+                        <ul class="list-unstyled text-center">
+                            <li><a href="#community" class="text-decoration-none text-white">Join Our Community</a></li>
+                            <li><a href="#" class="text-decoration-none text-white">Download</a></li>
+                            <li><a href="#purchase" class="text-decoration-none text-white">Purchase</a></li>
+                            <li><a href="#" class="text-decoration-none text-white">More Games</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h1 class="text-center">Tournaments</h1>
+                        <ul class="list-unstyled text-center">
+                            <li><a href="#" class="text-decoration-none text-white">Daily</a></li>
+                            <li><a href="#" class="text-decoration-none text-white">Weekly</a></li>
+                            <li><a href="#" class="text-decoration-none text-white">Monthly</a></li>
+                            <li><a href="#" class="text-decoration-none text-white">Festivals Special</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row d-flex">
+                    <div class="col">
+                        <h1 class="text-center">Daily Events</h1>
+                        <ul class="list-unstyled text-center">
+                            <li><a href="#" class="text-decoration-none text-white">Win Player Kits</a></li>
+                            <li><a href="#" class="text-decoration-none text-white">Win Cash Prize</a></li>
+                            <li><a href="#" class="text-decoration-none text-white">T-shirt</a></li>
+                            <li><a href="#" class="text-decoration-none text-white">Win more prizes</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h1 class="text-center">Social Media</h1>
+                        <ul class="list-unstyled text-center">
+                            <li><a href="#" class="text-decoration-none text-white">Visit Instagram Page</a></li>
+                            <li><a href="#" class="text-decoration-none text-white">Visit Facebook Page</a></li>
+                            <li><a href="#" class="text-decoration-none text-white">Visit Twitter Page</a></li>
+                            <li><a href="#" class="text-decoration-none text-white">YouTube Channel</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 p-3">
+                <h1 class="text-center">Contact Us</h1>
+                <form>
+                    <label for="#contact_email" class="fs-5 mt-4">Email Id:</label>
+                    <div class="input-group">
+                        <i class="fa fa-envelope-o input-group-text text-white bg-transparent" aria-hidden="true"></i>
+                        <input id="contact_email" type="email" class=" form-control bg-transparent text-white" placeholder="Enter email id.....">
+                    </div>
+                    <label for="#contact_mob" class="fs-5 mt-4">Mobile No.:</label>
+                    <div class="input-group">
+                        <i class="fa fa-phone input-group-text text-white bg-transparent" aria-hidden="true"></i>
+                        <input id="contact_mob" type="number" class=" form-control bg-transparent text-white" placeholder="Enter mobile number.....">
+                    </div>
+                    <label for="#contact_msg" class="fs-5 mt-4">Enter Message:</label><br>
+                    <textarea name="message" id="contact_msg" cols="48" rows="5" class="text-white bg-transparent" placeholder="Enter message here..."></textarea>
+                </form>
+                <button type="submit" class="btn bg-primary fw-bold text-white">Submit</button>
+            </div>
+        </div>
+        <div class="row text-center border-top"><i class="fa fa-copyright" aria-hidden="true">  2024 Outdoor Games Club. All rights reserved.</i></div>
+    </section>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
